@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {{ title }}
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a id="cheating-footage" href="cheatingfootage">لقطات الغش</a></li>
+            <li><a href="/">الصفحة الرئيسية</a></li>
+        </ul>
+    </nav>
+    {% block body %}
+    {% endblock %}
+<footer>
+    <p> جميع الحقوق محفوظة &copy;<script>document.write(new Date().getFullYear());</script> </p>
+</footer>
+
+</body>
+</html>

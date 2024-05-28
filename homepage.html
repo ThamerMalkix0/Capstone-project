@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="content">
+    <br>
+    <div class="image">
+        <img src="/static/images/surveillance_cam.png" width="200" height="200">
+    </div>
+    <br>
+    <div class="description">
+        <h1>مرحباً بكم في موقعنا</h1>
+        <p>نظام قائم على الذكاء الاصطناعي لمراقبة الامتحانات الحضورية وتم إنشاءه بواسطة طلاب جامعة الطائف من كلية الحاسبات وتقنية المعلومات</p>
+    </div>
+    <br>
+    <div class="monitoring-container">
+        <input class="monitoring-btn" type="button" value="البدء بالمراقبة" onclick="window.location.href='monitoring'">
+    </div>
+</div>
+
+{% endblock %}

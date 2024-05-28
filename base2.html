@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {{ title }}
+    </title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+        integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/async/3.2.0/async.min.js"
+        integrity="sha512-6K6+H87tLdCWvY5ml9ZQXLRlPlDEt8uXmtELhuJRgFyEDv6JvndWHg3jadJuBVGPEhhA2AAt+ROMC2V7EvTIWw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.roboflow.com/0.2.26/roboflow.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <script src="/static/js/main.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a id="cheating-footage" href="cheatingfootage">
+                    لقطات الغش
+                </a>
+            </li>
+            <li>
+                <a href="/">الصفحة الرئيسية</a>
+            </li>
+        </ul>
+    </nav>
+    {% block body %}
+    {% endblock %}
+
+<footer>
+    <p> جميع الحقوق محفوظة &copy;<script>document.write(new Date().getFullYear());</script> </p>
+</footer>
+
+</body>
+</html>
