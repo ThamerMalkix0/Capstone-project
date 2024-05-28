@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div id="capturedImageContainer" style="display: flex;justify-content: center;"></div>
+
+
+<script>
+    function displayCapturedImage(dataURL) {
+        // Create an image element to display the screenshot
+        var img = document.createElement('img');
+        img.src = dataURL;
+
+        // Append the image to the screenshot container
+        var container = document.getElementById('capturedImageContainer');
+        container.appendChild(img);
+    }
+    window.onload = function() {
+        var savedDataURL = localStorage.getItem('capturedImage');
+        if (savedDataURL) {
+            displayCapturedImage(savedDataURL);
+        }
+    };
+
+</script>
+
+{% endblock %}
